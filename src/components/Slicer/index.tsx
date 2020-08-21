@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FormField, Label, Input } from "./styled";
+import { FormField, Label, Input, TextArea } from "./styled";
 
 import { BuilderItem } from "../../common/types";
 
@@ -30,7 +30,7 @@ export const Slicer = ({ item }: SlicerProps) => {
       return (
         <FormField>
           <Label>{item.label}</Label>
-          <textarea defaultValue={item.value}></textarea>
+          <TextArea defaultValue={item.value} />
         </FormField>
       );
 
@@ -48,7 +48,7 @@ export const Slicer = ({ item }: SlicerProps) => {
       return (
         <FormField>
           <Label>{item.label}</Label>
-          <input type="date" defaultValue={item.value} />
+          <Input type="date" defaultValue={item.value} />
         </FormField>
       );
 
